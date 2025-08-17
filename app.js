@@ -8,6 +8,8 @@ style.textContent = `
     justify-content:center;
     align-items:center;
     height:100vh;
+    max-width: 1000px;
+    width:100%
   }
 
   body.dark{
@@ -35,9 +37,6 @@ style.textContent = `
     }
 
   .card p { 
-  opacity: 75%
-  max-width:250px;
-  width:100%
   flex-wrap: nowrap
   margin:20px 0; 
   line-height:1.5; 
