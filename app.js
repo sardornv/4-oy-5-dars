@@ -8,8 +8,6 @@ style.textContent = `
     justify-content:center;
     align-items:center;
     height:100vh;
-    max-width: 1000px;
-    width:100%
   }
 
   body.dark{
@@ -25,6 +23,8 @@ style.textContent = `
   }
   .cards {
     display:flex;
+    max-width: 1000px;
+    width:100%
   }
   .card {
     padding:30px;
