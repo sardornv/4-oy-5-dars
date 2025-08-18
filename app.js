@@ -57,12 +57,6 @@ style.textContent = `
   .card.suvs .btn   { color: #006970; }
   .card.luxury .btn { color: #004241; }
 
-  .range{
-  -webkit-appearance: none
-  width: 100%;
-  display: flex;
-  }
-
 `
 document.head.appendChild(style);
 
@@ -111,31 +105,6 @@ data.forEach(({key,title,text})=>{
   a.href="#";
   a.textContent="Learn More";
 
-  const range = document.createElement("input")
-  range.className = "range"
-  range.type = "range"
-  range.min = "10"
-  range.max = "20"
-  range.value = "15"
-
-  range.addEventListener("input" , () => {
-    p.style.fontSize = range.value + "px"
-  })
-
-  const button = document.createElement("button")
-  button.textContent = "on"
-  button.className = "button"
-
-  button.addEventListener("click", () => {
-    document.body.classList.toggle("dark")
-
-    if(button.textContent === "on"){
-        button.textContent = "off"
-    }else{
-        button.textContent = "on"
-    }
-  })
-
-  card.append(img,button,range,h2,p,a);
+  card.append(img,h2,p,a);
   cards.appendChild(card);
 })  ;
